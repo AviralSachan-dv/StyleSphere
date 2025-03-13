@@ -1,8 +1,11 @@
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Card, Row, Col, Spin, Typography, Button } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import axios from "axios";
+
+
 
 const { Title } = Typography;
 const { Meta } = Card;
@@ -41,6 +44,7 @@ console.log(products);
   }, [categoryId]);
 
   return (
+    <>
     <div className="product-container">
       <Title level={2}>Products</Title>
       {loading ? <Spin size="large" /> : (
@@ -67,7 +71,11 @@ console.log(products);
           )}
         </Row>
       )}
+     
     </div>
+    
+     
+      </>
   );
 };
 

@@ -4,6 +4,7 @@ import Home from "./Home";
 import ProductList from "./ProductList";
 import { Button, Drawer, Input, Layout, Form, Select } from "antd";
 
+
 const { Header, Content } = Layout;
 const { Option } = Select;
 
@@ -39,7 +40,7 @@ const App = () => {
       <Router>
         <Layout>
           <Header className="header">
-            <h1 className="logo" style={{ backgroundColor: "#1677ff", borderRadius: "50px" }}>
+            <h1 className="logo" style={{ backgroundColor: "#1677ff", borderRadius: "50px"  }}>
               <Button style={{ position: "relative", right: "35%" }} type="dashed" onClick={() => setOpen(true)}>
                 Filters
               </Button>{" "}
@@ -92,6 +93,9 @@ const App = () => {
           <Button onClick={clearFilter} danger>Clear Filter</Button>
         </Form>
       </Drawer>
+      
+
+       
     </>
   );
 };

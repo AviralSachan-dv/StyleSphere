@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center space-x-4">
         <FaHeart className="text-lg cursor-pointer" />
-        <FaShoppingBag className="text-lg cursor-pointer" />
+        {/* <FaShoppingBag className="text-lg cursor-pointer" /> */}
         <button className="border px-4 py-1 rounded-md">LOGIN</button>
       </div>
     </nav>

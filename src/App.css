@@ -28,8 +28,19 @@
   color: white;
   text-align: center;
   padding: 10px;
+  z-index: 999;
 }
 
 .logo {
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
