@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Input, Card, Button, Row, Col, Spin, Typography, Layout } from "antd";
+import { Input, Card, Button, Row, Col, Spin, Typography, Layout , Drawer,Form} from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import axios from "axios";
 import "./App.css";
@@ -102,6 +102,9 @@ const Home = ({ minPrice, maxPrice, selectedSize, selectedColor }) => {
   }, [visibleProducts, loadingMore]);
 
   return (
+    <>
+    
+
     <Layout style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <div className="home-container" style={{ flex: 1, padding: "20px" }}>
         <Title level={2} style={{ textAlign: "center" }}>Welcome to Style-Sphere</Title>
@@ -165,6 +168,7 @@ const Home = ({ minPrice, maxPrice, selectedSize, selectedColor }) => {
       </div>
       <CustomFooter />
     </Layout>
+    </>
   );
 };
 
