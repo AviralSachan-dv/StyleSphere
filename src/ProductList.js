@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Card, Row, Col, Spin, Typography, Button } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import axios from "axios";
+import PaymentComponent from "./Payment";
 
 
 
@@ -59,9 +60,9 @@ console.log(products);
                   hoverable
                   cover={<img alt={product.name} src={product.images[0]?.src} />}
                   actions={[
-                    <Button type="primary" icon={<ShoppingCartOutlined />}>
-                      Add to Cart
-                    </Button>,
+//                     <Button type="primary" icon={<ShoppingCartOutlined />}>
+//   <PaymentComponent amount={product.price} />
+// </Button>
                   ]}
                 >
                   <Meta title={product.name} description={`${product.price} USD`} />
