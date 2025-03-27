@@ -18,7 +18,7 @@ const PaymentComponent = ({ amount, onSuccess }) => {
     }
 
     const options = {
-      key: "rzp_test_XXXXXXXXXXXXXXXX", // Replace with your Razorpay Test Key
+      key: "rzp_live_96hXwgILvQq9Mc", // Replace with your Razorpay Test Key
       amount: amount * 100, // Convert to paise
       currency: "INR",
       name: "Style-Sphere",

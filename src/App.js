@@ -6,7 +6,7 @@ import Login from "./Login";
 import { auth, signOut } from "./firebase";
 import { Layout, Spin, Button, Drawer, Input, Form, Select } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
-import Cart from "./Cart"; // Import Cart component
+import Cart from "./Cart"; 
 
 const { Content } = Layout;
 const { Option } = Select;
